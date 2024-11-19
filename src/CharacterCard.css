@@ -1,0 +1,79 @@
+
+.character-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+  }
+  
+  .character-card {
+    flex: 0 1 250px; 
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .character-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .character-card__image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .character-card__info {
+    padding: 16px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .character-card__name {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .character-card__species,
+  .character-card__status,
+  .character-card__gender,
+  .character-card__origin,
+  .character-card__location {
+    margin: 4px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  
+  @media (max-width: 1200px) {
+    .character-card {
+      flex: 0 1 250px; 
+    }
+    .character-card:hover {
+        transform: translateY(-10px);
+      }
+  }
+  
+  @media (max-width: 900px) {
+    .character-card {
+      flex: 0 1 250px; 
+    }
+    .character-card:hover {
+        transform: translateY(-10px);
+      }
+  }
+  
+  @media (max-width: 600px) {
+    .character-card {
+      flex: 0 1 250px; 
+    }
+    .character-card:hover {
+        transform: translateY(-10px);
+      }
+  }
+  
